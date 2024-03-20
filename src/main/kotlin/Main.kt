@@ -44,6 +44,33 @@ fun isEven(number:Int):Boolean{
  println(result)
  return(result)
 }
+//MARCH-20-2024
+fun main(){
+ numberAverage(20,18,26);
+ userInformation("Fancy",20,"yellow")
+ statement("Assessment")
+}
+//Write a program that calculates the average of three numbers.
+// The user should be prompted to enter the three numbers.
+
+fun numberAverage(num1: Int,num2: Int, num3: Int) {
+ var ages = (num1 + num2 + num3) / 3
+ println(ages)
+}
+
+//Write a program that prompts the user to enter their name,
+// age, and favourite color, and then prints out a message including all of that information.
+fun userInformation(name: String, age: Int, color: String) {
+ var sentence = "my name is $name and I am $age years old and my favourite color is $color"
+ println(sentence)
+}
+
+//write a function that extracts a substring from a given string starting from index 2 to index 5
+//using the slice function and return it
+fun statement(word: String):String{
+ var text=(word.slice(2..5))
+ return text
+}
 
 
 
